@@ -1,0 +1,61 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to left, #00ffff, #000);
+}
+.cal-grid{
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   min-height: 100vh;
+   grid-template-columns: repeat(4, 100px);
+   grid-template-rows:minmax(120px, auto) repeat(5, 100px) ;
+}
+.cal-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #fff ;
+    outline: none;
+    background-color: rgba(10, 2, 2, 0.75);
+}
+.cal-grid > button:hover{
+    background-color: rgba(143, 95, 23, 0.9);
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+   grid-column: 1/-1;
+   background-color: rgba(0, 0, 0, 0.75);
+   display: flex;
+   align-items: flex-end;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 10px;
+   word-wrap: break-word;
+   word-break: break-all;
+}
+.output .pre-operand{
+ color: rgba(255,255,255,.75);
+ font-size: 1rem;
+}
+.output .current-operand{
+    color: #fff;
+    font-size: 2rem;
+}
+footer .copyright {
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.6rem;
+    color: #a7a7a7;
+  }
+h1{
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.6rem;
+    color: #a7a7a7;
+    text-align: center;
+}  
